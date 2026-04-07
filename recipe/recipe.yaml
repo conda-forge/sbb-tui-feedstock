@@ -1,5 +1,5 @@
 context:
-  version: "1.13.3"
+  version: "1.13.4"
 
 package:
   name: sbb-tui
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/Necrom4/sbb-tui/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: d4556508d9f6ad908e77821c635f859b944dc57a633719a563bf9ae2347930b7
+    sha256: 209af4b44a381b2eeb3dcdab0808e3a727088856b1a739ca8b5c12802776b85d
     target_directory: src
   - if: win
     then:
