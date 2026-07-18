@@ -1,12 +1,15 @@
+bot:
+  automerge: true
+build_platform:
+  win_arm64: win_64
+conda_build:
+  error_overlinking: true
 conda_build_tool: rattler-build
-provider:
-  osx_arm64: default
-  linux_aarch64: default
+conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
-conda_build:
-  error_overlinking: true
-conda_forge_output_validation: true
-bot:
-  automerge: true
+provider:
+  linux_aarch64: default
+  osx_arm64: default
+test: native_and_emulated
